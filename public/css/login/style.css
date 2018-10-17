@@ -1,7 +1,11 @@
 body{
     margin: 0;
     padding: 0;
+<<<<<<< HEAD:public/css/login/style.css
+    background: url(fondo3.jpg);
+=======
     background: url(fondo2.jpg);
+>>>>>>> 3e720904d6cd5cb2526a723c6e929d4e46b7284e:public/login/style.css
     background-size: cover;
     background-position: center;
     font-family: sans-serif;

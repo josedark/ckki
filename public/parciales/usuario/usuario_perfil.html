@@ -1,0 +1,32 @@
+
+<div class="container" ng-controller="usuarioCtrL as profe">
+  <button class="btn btn-primary" ng-click="EditarProfesor()">Editar</button>
+           <div class="row">
+                
+                <div class="col-sm-9">
+                    <section class="panel">
+                        <div class="panel-body">
+                            
+                            Nombre:
+                            <input type="text" class="form-control" ng-model="editando.nombre">
+                            <br>
+
+                            Edad:
+                            <input type="text" class="form-control" ng-model="editando.edad">
+                            <br>
+
+                            Bio:
+                            <textarea class="form-control" ng-model="editando.bio" rows="5"></textarea>
+
+                            <br>
+                            <button class="btn btn-primary" ng-click="GuardarCambios()">Guardar</button>
+                            <button class="btn btn-danger" ng-click="CancelarCambios()">Cancelar</button>
+
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+
+        </div>

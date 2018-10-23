@@ -1,27 +1,39 @@
-
-
-<!DOCTYPE html>
-<html ng-app="appcontrol">
+<html ng-app="appcontrol" ng-controller="mainCtrl" >
 <head>
-    <%- include partials/head %>
+  <title> <%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <% include partials/head %>
+ 
+ 
+
 </head>
-<body class="container">
-
-<header>
-    <% include partials/header %>
-</header>
-
-<main>
-    <div class="jumbotron">
-        <% include partials/usuario/usuario %>
-    </div>
+<body>
+ <% include partials/nav %>	
 
 
-</main>
 
-<footer>
-    <% include partials/footer %>
-</footer>
+ 
+
+<div class="container" div ng-view >
+     
+
+</div>
+
+
+
+
+
+
+<% include partials/footer %>  
+
+
+  
+
+
+
+
+  
 
 </body>
 </html>

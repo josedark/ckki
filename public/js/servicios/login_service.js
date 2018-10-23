@@ -6,11 +6,11 @@ app.factory('LoginService', ['$http','$q', function( $http, $q ){
 
 	var self = {
 
-		login: function( datos ){
+		login: function(){
 
 			var d = $q.defer();
 
-			$http.post('php/login/post.verificar.php', datos)
+			$http.post('/users/login')
 				 .success(function( data ){
 
 				 	console.log( data );

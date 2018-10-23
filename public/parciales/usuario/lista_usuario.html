@@ -1,0 +1,37 @@
+<h1> usuario</h1>
+<h4>  listado  de los usuario</h4>
+
+<hr>
+
+<div class="row">
+	<table class= "table table-striped">
+      <tr> 
+      	<th>idusuario</th>
+      	<th>codigo</th>
+      	<th>nombre</th>
+      	<th>contrasena</th>
+      	<th>ultimoacceso </th>
+      	<th>conectado</th>
+      	<th>Editar</th>
+      </tr>
+      <tr ng-repeat= "usu in usuario" >
+      	<th>{{usu.idusuario}}</th>
+      	<th>{{usu.codigo}}</th>
+      	<th>{{usu.nombre}}</th>
+      	<th>{{usu.contrasena}}</th>
+      	<th>{{usu.ultimoacceso}}</th>
+      	<th>{{usu.conectado}}</th>
+      	<th>conectado</th>
+
+      </tr>
+
+	</table>
+	<br>
+	<button class ="btn  btn-primary"> Anterios </button>
+	<button class ="btn  btn-primary"> Siguiente </button>
+
+
+</div>
+
+
+
